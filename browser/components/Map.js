@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import {withGoogleMap, GoogleMap, InfoWindow, Marker} from 'react-google-maps';
+import mapStyles from '../../public/mapStyles'
+import data from '../../data'
+import Togglebar from '../components/Togglebar';
 
 class Map extends Component {
 
@@ -8,12 +11,21 @@ class Map extends Component {
 
     return (
       <GoogleMap
-        defaultZoom={2}
-        defaultCenter={{lat: 0, lng: 0}}>
+        defaultOptions={{ styles: mapStyles }}
+        defaultZoom={this.props.zoom}
+        defaultCenter={this.props.center}>
+
         {markers.map((marker, index) => (
-          <Marker {...marker} />
-        )
-      )}
+          <Marker
+            key={index}
+            position={marker.position}
+            onClick={() => this.props.onCityClick(marker)}
+            >
+
+
+            </Marker>
+        ))}
+      <Togglebar />
     </GoogleMap>
     )
   }

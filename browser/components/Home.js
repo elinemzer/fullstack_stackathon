@@ -21,7 +21,7 @@ export default function Home () {
 
       <div id="rectangle2" className="panel panel-default">
         <div id="rectanglefont" className="panel-body">
-           With nearly all of the planet’s population growth concentrated in developing countries, demographers and economists estimate that over the next 15 years, cities in emerging economies will create 50% of the world’s economic growth.
+           With nearly all of the planet’s population growth concentrated in developing countries, demographers and economists estimate that over the next 30 years, cities in emerging economies will create over 50% of the world’s economic growth.
         </div>
       </div>
 

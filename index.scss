@@ -16,7 +16,7 @@
 
 #rectanglefont {
  font-family: "Century Gothic", sans-serif;
- font-size: 16px;
+ font-size: 20px;
  font-weight: lighter;
  font-variant: normal;
  color: white;
@@ -33,7 +33,7 @@
 
 #centerfont {
  font-family: "Lucida Grande", Tahoma;
- font-size: 20px;
+ font-size: 28px;
  font-weight: lighter;
  font-variant: normal;
  text-transform: uppercase;
@@ -47,5 +47,13 @@ img {
 }
 .main-container {
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-group {
+  position: absolute;
+  left: 500px;
+  z-index: 1;
 }
