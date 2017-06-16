@@ -1,20 +1,14 @@
 import React, {Component} from 'react';
-import InitialMap from '../components/InitialMap'
+import Map from '../components/Map'
 
-export default class MapContainer extends Component{
+export default (props) => {
 
-  render() {
     return (
-      <div>
-        <InitialMap
-          containerElement={
-            <div style={{height: "100%"}} />
-          }
-          mapElement={
-            <div style={{height: "100%"}} />
-          }
-          />
-          </div>
+      <div className="main-container">
+        <Map
+          containerElement={<div style={{height: '100%'}} />}
+          mapElement={<div style={{height: '100%'}} />}
+        />
+      </div>
     )
   }
-}

@@ -1,6 +1,22 @@
 const db = require('../db');
 const Sequelize = require('sequelize');
 
+//city model
+//name
+//location
+
+//year model
+//year
+
+//year/city join
+//year id
+//city id
+//population
+
+//year hasmany cities
+//city hasmany years
+
+
 const cities = db.define('City', {
   name: {
     type: Sequelize.STRING,
