@@ -22,6 +22,27 @@ class Map extends Component {
             onClick={() => this.props.onCityClick(marker)}
             >
 
+            {marker.showInfo && (
+            <InfoWindow onCloseClick={() => this.props.onCityClose(marker)}>
+              {
+                <div className="row">
+                <div className="col-sm-12">
+                 <div className="thumbnail" width="100" height="100">
+                  <img src={marker.imageURL} />
+                    <div className="caption">
+                      <h3>{marker.name}</h3>
+                        <h4>Population: {marker.population} million</h4>
+                        <h4> Rank: {marker.rank}</h4>
+                        <h5>Rate of informal employment: {marker.informalityrate}%</h5>
+                        <h5>Percent of residents living on less than $5 a day: {marker.dollaraday}%</h5>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+              }
+            </InfoWindow>
+          )}
+
 
             </Marker>
         ))}

@@ -214,6 +214,220 @@ const data = [
    }
  ]},
 
+ {"name": "Moscow",
+ "imageURL":null,
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"55.755",
+ "longitude":"37.621",
+ "fiftypop": [
+   {
+     "population": 5.356,
+     "rank": 6
+   }
+ ],
+ "seventypop": [
+   {
+     "population": 7.106,
+     "rank": 10
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": 8.987,
+      "rank": 15
+    }
+  ],
+  "tenpop": [
+    {
+      "population": 11.461,
+      "rank": 19
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Buenos Aires",
+ "imageURL":null,
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"-34.61",
+ "longitude":"-58.40",
+ "fiftypop": [
+   {
+     "population": 5.098,
+     "rank": 7
+   }
+ ],
+ "seventypop": [
+   {
+     "population": 8.105,
+     "rank": 7
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": 10.513,
+      "rank": 10
+    }
+  ],
+  "tenpop": [
+    {
+      "population": 14.246,
+      "rank": 13
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": 16.956,
+     "rank": 18
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 22.130,
+     "rank": 16
+   }
+ ]},
+
+ {"name": "Chicago",
+ "imageURL":null,
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"41.85",
+ "longitude":"-87.65",
+ "fiftypop": [
+   {
+     "population": 4.999,
+     "rank": 8
+   }
+ ],
+ "seventypop": [
+   {
+     "population": 7.106,
+     "rank": 11
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": 7.374,
+      "rank": 21
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Calcutta",
+ "imageURL":null,
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"22.533",
+ "longitude":"88.356",
+ "fiftypop": [
+   {
+     "population": 4.513,
+     "rank": 9
+   }
+ ],
+ "seventypop": [
+   {
+     "population": 6.926,
+     "rank": 12
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": 10.890,
+      "rank": 7
+    }
+  ],
+  "tenpop": [
+    {
+      "population": 14.283,
+      "rank": 12
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": 19.092,
+     "rank": 15
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 33.040,
+     "rank": 5
+   }
+ ]},
+
+ {"name": "Shanghai",
+ "imageURL":null,
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"31.22",
+ "longitude":"121.46",
+ "fiftypop": [
+   {
+     "population": 4.301,
+     "rank": 10
+   }
+ ],
+ "seventypop": [
+   {
+     "population": 6.036,
+     "rank": 15
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": 7.823,
+      "rank": 20
+    }
+  ],
+  "tenpop": [
+    {
+      "population": 19.980,
+      "rank": 4
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": 30.751,
+     "rank": 3
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 22.320,
+     "rank": 15
+   }
+ ]},
 ]
 
 module.exports = data;

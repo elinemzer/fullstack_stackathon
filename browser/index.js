@@ -8,7 +8,6 @@ import store from './store';
 
 import Home from './components/Home';
 import MapContainer from './containers/MapContainer';
-//import Map from './components/Map'
 
 
 ReactDOM.render(

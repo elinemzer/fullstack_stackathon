@@ -18,67 +18,57 @@ export default class MapContainer extends Component {
     this.handle2050submit = this.handle2050submit.bind(this);
   }
 
-onCityClick(clickedCity) {
-  this.setState({
-    markers: this.state.markers.map(marker => {
-      if (marker === clickedCity) marker.showInfo = true
-      marker.showInfo = (
-        <div className="row">
-          <div className="col-sm-6 col-md-4">
-          <div className="thumbnail">
-           <img src={marker.imageURL} />
-             <div className="caption">
-               <h3>{marker.name}</h3>
-                 <h5>Rate of informal employment: {marker.informalityrate}</h5>
-                 <h5>Percent of residents living on less than $5 a day: {marker.dollaraday}</h5>
-             </div>
-          </div>
-          </div>
-         </div>
-      )
-      console.log('marker', marker.imageURL)
-      return marker;
+  handle1950submit(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.fiftypop[0].population){
+        return markerObject
+      }
     })
-  })
-}
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+      const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+      return {
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.fiftypop[0].population,
+        rank: markerObject.fiftypop[0].rank
+      }
+    })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
 
-handle1950submit(){
-  const markerData = data
-  const filteredMarkers = markerData.filter(markerObject => {
-    if (markerObject.fiftypop[0].population){
-      return markerObject
-    }
-  })
-  const selectedMarkers = filteredMarkers.map(markerObject => {
+  handle1970submit(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.seventypop[0].population){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
       console.log(latlng)
       return {
-        position: latlng
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.seventypop[0].population,
+        rank: markerObject.seventypop[0].rank
       }
     })
-  this.setState({
-    markers: selectedMarkers
-  })
-}
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
 
-handle1970submit(){
-  const markerData = data
-  const filteredMarkers = markerData.filter(markerObject => {
-    if (markerObject.seventypop[0].population){
-      return markerObject
-    }
-  })
-  const selectedMarkers = filteredMarkers.map(markerObject => {
-      const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
-      return {
-        position: latlng
-      }
-    })
-  this.setState({
-    markers: selectedMarkers
-  })
-}
+
+
 
 handle1990submit(){
   const markerData = data
@@ -91,7 +81,13 @@ handle1990submit(){
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
       console.log(latlng)
       return {
-        position: latlng
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.ninetypop[0].population,
+        rank: markerObject.ninetypop[0].rank
       }
     })
   this.setState({
@@ -110,7 +106,13 @@ handle2010submit(){
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
       console.log(latlng)
       return {
-        position: latlng
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.tenpop[0].population,
+        rank: markerObject.tenpop[0].rank
       }
     })
   this.setState({
@@ -129,7 +131,13 @@ handle2030submit(){
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
       console.log(latlng)
       return {
-        position: latlng
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.thirtypop[0].population,
+        rank: markerObject.thirtypop[0].rank
       }
     })
   this.setState({
@@ -149,7 +157,13 @@ handle2050submit(){
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
       console.log(latlng)
       return {
-        position: latlng
+        position: latlng,
+        name: markerObject.name,
+        imageURL: markerObject.imageURL,
+        informalityrate: markerObject.informalityrate,
+        dollaraday: markerObject.dollaraday,
+        population: markerObject.twentyfiftypop[0].population,
+        rank: markerObject.twentyfiftypop[0].rank
       }
     })
   this.setState({
@@ -157,9 +171,27 @@ handle2050submit(){
   })
 }
 
+onCityClick(clickedCity) {
+  this.setState({
+    markers: this.state.markers.map(marker => {
+      if (marker === clickedCity) marker.showInfo = true
+      console.log(this.state.markers)
+      return marker;
+    })
+  })
+}
+
+onCityClose(clickedCity){
+  this.setState({
+    markers: this.state.markers.map(marker => {
+      if (marker === clickedCity) marker.showInfo = false
+      return marker;
+    }),
+  })
+}
 
   render(){
-    console.log('markerstate: ', this.state.markers)
+    const popup = (this.state.visible ? <Popup clickedCity={this.state.clickedCity} /> : null)
     return (
       <div className="main-container">
         <Map
@@ -169,6 +201,7 @@ handle2050submit(){
           zoom={2}
           markers={this.state.markers}
           onCityClick={this.onCityClick}
+          onCityClose={this.onCityClose}
         />
         <Togglebar
           handle1950submit={this.handle1950submit}
@@ -178,29 +211,8 @@ handle2050submit(){
           handle2030submit={this.handle2030submit}
           handle2050submit={this.handle2050submit}
         />
+        {popup}
       </div>
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-// componentDidMount(){
-//   const markerData = data;
-//   const allMarkers = markerData.map(markerObject => {
-//     const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-//     return {
-//       position: latlng
-//     }
-//   })
-//   this.setState({
-//     markers: allMarkers
-//   })
-// }
