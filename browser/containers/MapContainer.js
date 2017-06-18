@@ -16,6 +16,163 @@ export default class MapContainer extends Component {
     this.handle2010submit = this.handle2010submit.bind(this);
     this.handle2030submit = this.handle2030submit.bind(this);
     this.handle2050submit = this.handle2050submit.bind(this);
+    this.showTen1950 = this.showTen1950.bind(this);
+    this.showTen1970 = this.showTen1970.bind(this);
+    this.showTen1990 = this.showTen1990.bind(this);
+    this.showTen2010 = this.showTen2010.bind(this);
+    this.showTen2030 = this.showTen2030.bind(this);
+    this.showTen2050 = this.showTen2050.bind(this);
+
+  }
+
+  showTen1950(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.fiftypop[0].rank && markerObject.fiftypop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.fiftypop[0].population,
+          rank: markerObject.fiftypop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
+
+  showTen1970(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.seventypop[0].rank && markerObject.seventypop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.seventypop[0].population,
+          rank: markerObject.seventypop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
+
+  showTen1990(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.ninetypop[0].rank && markerObject.ninetypop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.ninetypop[0].population,
+          rank: markerObject.ninetypop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
+
+  showTen2010(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.tenpop[0].rank && markerObject.tenpop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.tenpop[0].population,
+          rank: markerObject.tenpop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
+
+  showTen2030(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.thirtypop[0].rank && markerObject.thirtypop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.thirtypop[0].population,
+          rank: markerObject.thirtypop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
+  }
+
+  showTen2050(){
+    const markerData = data
+    const filteredMarkers = markerData.filter(markerObject => {
+      if (markerObject.twentyfiftypop[0].rank && markerObject.twentyfiftypop[0].rank <= 10){
+        return markerObject
+      }
+    })
+    const selectedMarkers = filteredMarkers.map(markerObject => {
+        const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
+
+        return {
+          position: latlng,
+          name: markerObject.name,
+          imageURL: markerObject.imageURL,
+          informalityrate: markerObject.informalityrate,
+          dollaraday: markerObject.dollaraday,
+          population: markerObject.twentyfiftypop[0].population,
+          rank: markerObject.twentyfiftypop[0].rank
+        }
+      })
+    this.setState({
+      markers: selectedMarkers
+    })
   }
 
   handle1950submit(){
@@ -51,7 +208,6 @@ export default class MapContainer extends Component {
     })
     const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
       return {
         position: latlng,
         name: markerObject.name,
@@ -67,9 +223,6 @@ export default class MapContainer extends Component {
     })
   }
 
-
-
-
 handle1990submit(){
   const markerData = data
   const filteredMarkers = markerData.filter(markerObject => {
@@ -79,7 +232,6 @@ handle1990submit(){
   })
   const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
       return {
         position: latlng,
         name: markerObject.name,
@@ -104,7 +256,6 @@ handle2010submit(){
   })
   const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
       return {
         position: latlng,
         name: markerObject.name,
@@ -129,7 +280,6 @@ handle2030submit(){
   })
   const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
       return {
         position: latlng,
         name: markerObject.name,
@@ -155,7 +305,6 @@ handle2050submit(){
   })
   const selectedMarkers = filteredMarkers.map(markerObject => {
       const latlng = {lat: Number(markerObject.latitude), lng: Number(markerObject.longitude)}
-      console.log(latlng)
       return {
         position: latlng,
         name: markerObject.name,
@@ -210,6 +359,12 @@ onCityClose(clickedCity){
           handle2010submit={this.handle2010submit}
           handle2030submit={this.handle2030submit}
           handle2050submit={this.handle2050submit}
+          showTen1950={this.showTen1950}
+          showTen1970={this.showTen1970}
+          showTen1990={this.showTen1990}
+          showTen2010={this.showTen2010}
+          showTen2030={this.showTen2030}
+          showTen2050={this.showTen2050}
         />
         {popup}
       </div>
