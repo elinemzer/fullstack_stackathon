@@ -166,7 +166,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 10.188,
      "rank": null
    }
  ]},
@@ -209,7 +209,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 11.124,
      "rank": null
    }
  ]},
@@ -252,15 +252,15 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 10.235,
      "rank": null
    }
  ]},
 
  {"name": "Buenos Aires",
  "imageURL":"http://www.as-coa.org/sites/default/files/field/image/Argentina_Top.jpg",
- "informalityrate": null,
- "dollaraday": null,
+ "informalityrate": 45,
+ "dollaraday": 15,
  "latitude":"-34.61",
  "longitude":"-58.40",
  "fiftypop": [
@@ -603,8 +603,8 @@ const data = [
 
  {"name": "Rio de Janeiro",
  "imageURL":"https://1.bp.blogspot.com/-88YbQqHe6wc/VxepNlqhj8I/AAAAAAAACKo/aRdCHSPOA0Iag08B7Yg66mpY0aR9s6QqwCLcB/s1600/brasil2.jpg",
- "informalityrate": null,
- "dollaraday": null,
+ "informalityrate": 60,
+ "dollaraday": 25,
  "latitude":"-22.90",
  "longitude":"-43.21",
  "fiftypop": [
@@ -897,7 +897,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 10.150,
      "rank": null
    }
  ]},
@@ -1757,7 +1757,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 14.176,
      "rank": null
    }
  ]},
@@ -1800,7 +1800,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 10.999,
      "rank": null
    }
  ]},
@@ -1886,7 +1886,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 11.571,
      "rank": null
    }
  ]},
@@ -2058,7 +2058,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 11.196,
      "rank": null
    }
  ]},
@@ -2101,7 +2101,7 @@ const data = [
  ],
  "twentyfiftypop": [
    {
-     "population": null,
+     "population": 12.996,
      "rank": null
    }
  ]},
@@ -2576,6 +2576,350 @@ const data = [
    {
      "population": 14.250,
      "rank": 30
+   }
+ ]},
+
+ {"name": "Addis Ababa",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"8.98",
+ "longitude":"38.757",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 13.212,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Ahmedabad",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"23.022",
+ "longitude":"72.571",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 12.431,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Chittagong",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"22.347",
+ "longitude":"91.812",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 12.212,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Ho Chi Minh City",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"10.823",
+ "longitude":"106.630",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 11.861,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Pune",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"18.524",
+ "longitude":"73.857",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 10.924,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Abidjan",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"5.3600",
+ "longitude":"4.0083",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 10.709,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Kano",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude": "12.0022",
+ "longitude":"8.592",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 10.444,
+     "rank": null
+   }
+ ]},
+
+ {"name": "Sanaa",
+ "imageURL":"",
+ "informalityrate": null,
+ "dollaraday": null,
+ "latitude":"15.369",
+ "longitude":"44.191",
+ "fiftypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "seventypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+  "ninetypop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+  "tenpop": [
+    {
+      "population": null,
+      "rank": null
+    }
+  ],
+ "thirtypop": [
+   {
+     "population": null,
+     "rank": null
+   }
+ ],
+ "twentyfiftypop": [
+   {
+     "population": 10.053,
+     "rank": null
    }
  ]},
 ]
